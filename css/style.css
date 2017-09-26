@@ -1,0 +1,19 @@
+body {
+  background-color: #55657f;
+}
+.login,
+.message-content {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.message-content {
+  /*margin-top: @default-margin*3;*/
+  background-color: #55657f;
+}
+label,
+p,
+h1,
+h2,
+h3 {
+  color: WHITE;
+}

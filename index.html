@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		 
+		<title>Simple chat by Matheus Henrique Pitz</title>
+	</head>
+	<body>
+	
+		<div id="content" class="col-md-12">
+			<div class="row">
+				<div class="login col-md-1 form-group" id="login" align="center">
+					<label for="user-name">Name: </label>
+					<input class="form-control" type="text" name="name" id="user-name"/>
+					</br>
+					<input type="button" value="Connect" class="btn btn-success form-control" id="btn-login"/>
+				</div>
+				<div class="login col-md-1 form-group" id="logoff" style="display:none;">
+					<input type="button" value="Desconnect" class="btn btn-danger form-control" id="btn-logoff"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="message-content">
+					<div class="message-area col-md-6">
+						<h3>Messages</h3>
+						<textarea class="form-control" cols="100" rows="25" id="messages" readonly="true" style="resize:none;width: 100%;"></textarea>
+						<div class="row">
+							<div class="col-md-4 form-group">
+								</br>
+								<label for="message">Message: </label>
+								<input class="form-control" type="text" name="name" id="message"/>
+								</br>
+								<input type="button" value="Send" class="btn btn-success form-control" id="btn-send"/>
+							</div>
+						</div>
+					</div>
+					<div class="online-area col-md-2 form-group">
+						<h3>Online Users</h3>
+						<textarea class="form-control" cols="50" rows="25" id="online-peoples" readonly="true" style="resize:none;width: 100%;"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- JS -->		 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

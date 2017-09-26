@@ -1,0 +1,22 @@
+@background-color: #55657f;
+@default-margin: 20px;
+@text-color: WHITE;
+
+body {
+	background-color: @background-color;
+}
+
+.login {
+	margin-top: @default-margin;
+	margin-left: @default-margin;	
+}
+
+.message-content {
+	&:extend(.login);
+	/*margin-top: @default-margin*3;*/
+	background-color: @background-color;
+}
+
+label, p, h1, h2, h3 {
+	color: @text-color;
+}
