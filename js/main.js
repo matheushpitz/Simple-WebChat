@@ -72,16 +72,14 @@ function addOnlineUsers(users) {
 // connection functions.
 function connect() {
 	
-	let connection;
-	
-	connection = new WebSocket('ws://localhost:8080/server.php');
+	let connection = new WebSocket('ws://localhost:8080');;
 	
 	connection.onopen = function() {
 		connection.send(buildData('name', name));
 		alert('Welcome to the chat. Developer By Matheus Henrique Pitz and IO Apps. \n http://www.ioapps.com.br/');
 	};
 	connection.onerror = function(error) {
-		alert('error');
+		alert('Error: '+error);
 	};
 	connection.onmessage = function(e) {			
 		let jsonData = JSON.parse(e.data);		
@@ -92,7 +90,6 @@ function connect() {
 		}
 	};
 	connection.onclose = function() {
-		alert('closed');
 	};
 	
 	this.sendMessage = function(msg) {
@@ -108,6 +105,6 @@ function connect() {
 	data = your data.
 	*/
 	function buildData(type, data) {
-		return '{"type": "'+type+'", "data": "'+data+'"}';
+		return JSON.stringify({type: type, data: data});
 	}
 }
