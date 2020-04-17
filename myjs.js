@@ -8,3 +8,7 @@ function getData() {
 function setData() {
 	this.x = 10;
 }
+
+function setData2() {
+	this.y = 20;
+}
