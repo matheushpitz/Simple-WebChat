@@ -4,3 +4,7 @@ function getData() {
 		value: 20
 	};
 }
+
+function setData() {
+	this.x = 10;
+}
