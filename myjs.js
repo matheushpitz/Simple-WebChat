@@ -4,3 +4,7 @@ function getData() {
 		value: 20
 	};
 }
+
+const a = () => {
+	console.log('hello');
+}
