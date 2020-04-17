@@ -4,7 +4,7 @@ use Ratchet\Http\HttpServer;
 use Ratchet\WebSocket\WsServer;
 use Connection\WebSocket;
 
-     require '/vendor/autoload.php';
+     require './vendor/autoload.php';
 
     $server = IoServer::factory(new HttpServer(new WsServer(new WebSocket())), 8080);
 
