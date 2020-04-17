@@ -5,6 +5,9 @@ function getData() {
 	};
 }
 
+function setData() {
+	this.x = 10;
+}
 const a = () => {
 	console.log('hello');
 }
