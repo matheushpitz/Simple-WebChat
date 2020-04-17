@@ -11,6 +11,8 @@ function setData() {
 
 function setData2() {
 	this.y = 20;
-}const a = () => {
+}
+
+const a = () => {
 	console.log('hello');
 }
