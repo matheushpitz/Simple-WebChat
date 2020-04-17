@@ -8,6 +8,9 @@ function getData() {
 function setData() {
 	this.x = 10;
 }
-const a = () => {
+
+function setData2() {
+	this.y = 20;
+}const a = () => {
 	console.log('hello');
 }
